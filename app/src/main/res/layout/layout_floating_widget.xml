@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!-- This is the collapsed layout -->
+        <RelativeLayout
+            android:id="@+id/layout_collapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/float_window_compass"
+                android:layout_width="@dimen/float_window_compass_size"
+                android:layout_height="@dimen/float_window_compass_size"
+                android:contentDescription="@string/content_description_float_window_compass"
+                android:src="@drawable/float_window_compass" />
+
+            <ImageView
+                android:id="@+id/float_window_pointer"
+                android:layout_width="@dimen/float_window_compass_size"
+                android:layout_height="@dimen/float_window_compass_size"
+                android:contentDescription="@string/content_description_float_window_pointer"
+                android:src="@drawable/float_window_pointer" />
+
+            <ImageView
+                android:id="@+id/float_window_menu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/float_window_menu_size"
+                android:layout_below="@id/float_window_compass"
+                android:layout_alignEnd="@+id/float_window_compass"
+                android:layout_marginVertical="@dimen/float_window_menu_margin_vertical"
+                android:contentDescription="@string/content_description_float_window_menu"
+                android:src="@drawable/float_window_menu" />
+
+            <ImageView
+                android:id="@+id/float_window_joystick"
+                android:layout_width="@dimen/float_window_joystick_size"
+                android:layout_height="@dimen/float_window_joystick_size"
+                android:contentDescription="@string/content_description_float_window_joystick"
+                android:src="@drawable/float_window_joystick" />
+
+        </RelativeLayout>
+
+        <!-- This is the expanded layout -->
+        <LinearLayout
+            android:id="@+id/layout_expanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

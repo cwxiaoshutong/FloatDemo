@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FloatDemo</string>
+
+    <!-- Content Description -->
+    <string name="content_description_float_window_compass" translatable="false">Compass image view</string>
+    <string name="content_description_float_window_menu" translatable="false">Trigger for menu view</string>
+    <string name="content_description_float_window_joystick" translatable="false">Joystick image view</string>
+    <string name="content_description_float_window_pointer" translatable="false">Pointer image view</string>
+</resources>
